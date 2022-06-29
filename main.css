@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+/* disposicion del main*/
+
+
+
+
+
+/*---------------------------------------------INDEX-------------------------------------------------------*/
+
+/*  HEADER  */
+.slogan-icon{
+    display: flex;
+    justify-content:space-around;
+    
+    
+}
+
+header{
+    background-color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+header img{
+    padding-left:10px ;
+    padding-top: 10px;
+    width: 60px;
+    height: auto;
+}
+
+header p{
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #da4;
+    
+}
+
+.logo{
+    
+ filter:invert(80%) sepia(100%) saturate(1000%) hue-rotate(346deg) brightness(80%) contrast(90%);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.menu{
+    margin-top: 5px;
+    border-top: 1px solid rgb(160, 150, 150);
+    padding-top:10px ;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    
+}
+
+.menu a{  
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+    color: #da4;;
+}
+
+.menu a:hover{
+    color: #967c4d;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/*  HERO  */
+.slider{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: -4px;
+}
+
+.slider ul{
+    display: flex;
+    width: 300%;
+
+    animation: slide 12s infinite alternate;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;  
+    
+}
+
+.slider img{
+    vertical-align: middle;
+    width: 100%;
+    opacity: 0.75;
+    filter: grayscale(20%);
+    filter: saturate(100%);
+    content:"";
+}
+
+@keyframes slide{
+    0%{margin-left: 0%}
+    25%{margin-left: 0%}
+
+    40%{margin-left: -100%}
+    60%{margin-left: -100%}
+
+    85%{margin-left: -200%}
+    100%{margin-left: -200%}
+}
+
+.hero{
+    position: relative;
+    text-align: center; 
+    display: inline-block;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 8vw;
+    text-transform: uppercase;
+    width: 100%;
+    color: white;
+    
+    
+}
+
+
+
+.descripcion-encima{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    color: #da4;;
+}
+
+.hero span::before {
+    content: "";
+    animation: animate 15s infinite;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        content: "roiman";  
+    }
+
+    100% {
+        content: "Helado";
+    }
+}
+
+
+/*  CONTAINER  */
+
+.container{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+}
+
+.texto{
+    padding-top: 2vh;
+    font-family: 'Questrial', sans-serif;
+}
+
+.foto{
+    height: 200px;
+    width: 250px;
+    border-radius: 3px;
+}
+
+
+/*  PRECIOS  */
+
+#precios{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(141, 133, 123);
+}
+
+#precios h1{
+    padding: 10px 0px 10px 0px;
+    font-size: 1.5em;
+}
+
+#precios h2{
+    margin-bottom: 0px;
+    font-size: 1em;
+    padding: 0;
+    width: min-content;
+    
+}
+
+#precios p{
+    padding: 0;
+    width: min-content;
+    
+    
+}
+
+.tarjeta{
+    width: min-content;
+    text-align: center;
+}
+
+
+.grilla{
+    
+    display: grid;
+    grid-template-columns:repeat( auto-fit, minmax(200px, 1fr) );
+    gap: 0.5rem;
+    justify-items:center;
+    
+}
+
+.icon{
+    height: 150px ;
+    width: 150px;
+    border-radius: 3px;
+    border: 1px solid rgba(228, 143, 32, 0.527);
+
+   
+}
+
+/*  SLIDER PRO  */
+
+.achicador{
+    
+    width: 60vw;
+    margin: auto;
+}
+
+.img-ed{
+    width: 100%;
+    margin:auto;
+}
+
+.container-all{
+    position: relative;
+    width:100%;
+    border-radius:6px;
+    overflow:hidden;
+    vertical-align: top;
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms;
+    animation-name: autoplay;
+    animation-duration: 8s; 
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 800ms;
+}
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+@keyframes autoplay {
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0)
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0)
+    }
+}
+
+main{
+    background-color: #ffffff;
+    border-top: 1px solid grey;
+}
+
+main h1{
+   
+    font-family: 'Questrial', sans-serif;
+    font-size: 6rem;
+    color: #da4;
+}
+
+main h2{
+    font-family: 'Mulish', sans-serif;
+    margin:10px auto;
+    font-size: 1.3rem;
+
+    padding: 5px 30px;
+}
+
+main h2 span{
+    color: rgb(255, 183, 40);
+
+}
+
+main p{
+    font-family:Radio Canada, sans-serif;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin:10px auto;
+    padding: 5px 30px;
+}
+
+
+
+
+
+
+
+/* HORARIOS */
+
+#horarios h1{
+    font-size: 1.5rem;
+    padding: 10px 0px 10px 0px;
+}
+
+#horarios li{
+    border-bottom: 1px solid rgb(182, 175, 175);
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 2em;
+}
+
+#horarios{
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+/*  FOOTER  */
+
+.e-mail{
+    text-align: center;
+}
+
+footer.container{
+    margin-top: 20px;
+
+}
+
+footer{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 10px grey;
+
+}
+
+footer p{
+    padding: 10px 10px;
+    font-family: 'Questrial', sans-serif;
+    color:#da4;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.redes ul{
+display: flex;
+}
+
+footer li{
+    margin: 10px;
+    list-style: none;
+    font-weight: 700;
+}
+
+a,li,ul{
+    text-decoration: none;
+
+}
+
+footer button{
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+
+footer input{
+    border-radius: 10px;
+    border-color: rgb(148, 144, 133);
+}
+
+footer a{
+    height: 100px;
+}
+
+.submit:hover{
+    background-color: #da4;
+    color: white;
+}
+
+/*---------------------------------------------US-------------------------------------------------------*/
+
+.us-container{
+    
+}
+
+.foto-us{
+    border-radius: 3px;
+    width: 40vw;
+    height: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+    float: left;
+    margin: 15px 5px 20px 20px;
+
+}
+
+.us-texto{
+    text-align: center;
+    margin: 15px 0px 30px 0px;
+}
+
+
+.us-anc{
+color: black;
+display: block;
+margin-top:20px;
+}
+
+.us-anc span{
+    background-color: #da4;;
+    padding: 10px;
+    font-family: 'Questrial';
+    font-weight: bold;
+    color: black;
+    border-radius: 7px;
+}
+
+.us-anc span:hover{
+    color: white;
+}
+
+.us-desc{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+SECCION PRODUCTOS
+*/
+
+
+.fuentes h2{
+    font-size: 2em;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
+    color: #da4;
+}
+
+.fuentes h3{
+    font-size: 1.5em;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
+    
+}
+
+.fuentes h4{
+    font-size: 1em;
+    font-family: 'Questrial', sans-serif;
+    padding: 5px;
+    
+}
+
+
+.fuentes p{
+    font-family: Radio Canada, sans-serif;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+.productos{
+    padding: 15px;
+}
+
+.grilla-productos{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    row-gap: 50px;
+    
+}
+
+.paleta{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    
+}
+
+.tarjeta-paletas{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/*
+SECCION LOCAL
+*/
+
+
+.hero-local .hero{
+    width: 60vw;
+    margin: 30px auto;
+}
+
+.hero-local .hero img{
+    width:100%;
+}
+
+.hero-local .hero p{
+    font-weight: bold;
+    
+}
+
+.mapa{
+    border:0;
+}
+
+.direccion{
+    font-size: 1.5rem !important;
+}
+
+/*
+SECCION CONTACTO
+*/
+
+.formulario{
+    margin-top: 30px;
+}
+
+input{
+    border-radius: 4px;
+    border-style:ridge;
+    border-color: rgb(207, 200, 186);
+    
+}
+
+textarea{
+    border-radius: 3px;
+}
+
+.contacto .fuentes p{
+    font-weight: bold;    
+}
+
+.contacto button{
+    font-size: 1rem;
+
+}
+
+.formulario button{
+    border-radius: 6px;
+    color: black;
+    background-color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+
+
+.formulario button:hover{
+    background-color: #da4;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*          MEDIA QUERYS PARA ADAPTAR LA PAGINA A VISUALIZACION WEB             */
+
+
+@media (min-width: 860px) {
+
+
+
+
+/* ARREGLO DE HEADER */
+
+
+header{
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+}
+
+
+
+/* ARREGLO DE HERO */
+
+
+.slider{
+    height: 87vh;
+}
+
+
+
+
+/* ARREGLO SECCION HORARIOS */
+
+#horarios h1 {
+    font-size: 2.5em;
+}
+
+
+#horarios ul li{
+    list-style: none;
+    font-size: 1em;  
+}
+
+
+ 
+/* ARREGLO SECCION PRECIOS */
+
+
+#precios h1{
+    font-size: 2.5em;
+}
+
+.img-cont{
+    width: 19vw;
+    height: 12vw;
+}
+
+
+.grilla{
+    grid-template-columns: fill;
+}
+
+
+
+/*disposicion cosas main*/
+
+.disposicion-main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 30px;
+    gap: 1rem;
+}
+
+#horarios{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+#horarios li{
+    border-bottom: 0px;
+    border-top: 1px solid grey;
+
+}
+
+#precios{
+    padding-top: 20px;
+    border-bottom: 0px;
+}
+
+.grilla{
+    grid-template-columns: repeat(6,1fr);
+}
+
+
+}
+
+
+
+/* ARREGLO SLIDER EDICION LIMITADA  */
+
+.img-ed{
+    height: 41vw;
+
+}
